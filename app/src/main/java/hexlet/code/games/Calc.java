@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 
-public class CalcGame implements Game {
+public class Calc implements Game {
 
     private final int[] operations = new int[]{0, 1, 2};
 

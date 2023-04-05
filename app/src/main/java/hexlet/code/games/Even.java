@@ -2,7 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 
-public class EvenGame implements Game {
+public class Even implements Game {
 
     @Override
     public String getRule() {
