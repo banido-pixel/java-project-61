@@ -1,5 +1,8 @@
 package hexlet.code;
 
+import hexlet.code.games.CalcGame;
+import hexlet.code.games.EvenGame;
+
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
@@ -10,6 +13,7 @@ public class App {
             Please enter the game number and press Enter.
             1 - Greet
             2 - Even
+            3 - Calc
             0 - Exit""";
 
     public static void main(String[] args) {
@@ -24,7 +28,8 @@ public class App {
             String choice = scanner.nextLine();
             switch (choice) {
                 case ("1") -> Cli.greetings();
-                case ("2") -> EvenGame.start();
+                case ("2") -> Engine.start(new EvenGame());
+                case ("3") -> Engine.start(new CalcGame());
                 case ("0") -> toExit = true;
                 default -> {
                 }
