@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 
 import java.util.stream.IntStream;
 
-public class Prime implements Game{
+public class Prime implements Game {
 
     @Override
     public String getRule() {
